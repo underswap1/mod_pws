@@ -1,7 +1,7 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.fabricmc.api.ModInitializer;
-import com.example.pws.components.hydration.HydrationTicker;
+import dev.underswap.pws.components.hydration.HydrationTicker;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 
 public class PwsMod implements ModInitializer {

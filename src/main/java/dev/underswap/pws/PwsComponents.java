@@ -1,7 +1,7 @@
-package com.example.pws;
+package dev.underswap.pws;
 
-import com.example.pws.components.hydration.HydrationComponent;
-import com.example.pws.components.hydration.HydrationComponentImpl;
+import dev.underswap.pws.components.hydration.HydrationComponent;
+import dev.underswap.pws.components.hydration.HydrationComponentImpl;
 import dev.onyxstudios.cca.api.v3.component.ComponentKey;
 import dev.onyxstudios.cca.api.v3.component.ComponentRegistryV3;
 import dev.onyxstudios.cca.api.v3.entity.EntityComponentFactoryRegistry;

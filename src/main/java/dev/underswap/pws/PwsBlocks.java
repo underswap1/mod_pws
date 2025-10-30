@@ -1,6 +1,8 @@
-package com.example.pws;
+package dev.underswap.pws;
 
-import com.example.pws.blocks.*;
+import dev.underswap.pws.blocks.DrumBlock;
+import dev.underswap.pws.blocks.ToughDirtBlock;
+import dev.underswap.pws.blocks.ToughStoneBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;

@@ -6,10 +6,10 @@
   "description": "Mijn eerste Fabric Mod voor 1.20.1",
   "entrypoints": {
     "main": [
-      "com.example.pws.PwsMod"
+      "dev.underswap.pws.PwsMod"
     ],
     "cardinal-components": [
-      "com.example.pws.PwsComponents"
+      "dev.underswap.pws.PwsComponents"
     ]
   },
   "depends": {

@@ -1,10 +1,10 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.*;
+
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {

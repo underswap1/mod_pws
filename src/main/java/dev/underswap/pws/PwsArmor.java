@@ -1,4 +1,4 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ArmorItem;

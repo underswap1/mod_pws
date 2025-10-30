@@ -1,4 +1,4 @@
-package com.example.pws.blocks;
+package dev.underswap.pws.blocks;
 
 import net.minecraft.block.Block;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

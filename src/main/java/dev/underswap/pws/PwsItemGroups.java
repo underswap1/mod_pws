@@ -1,4 +1,4 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;

@@ -1,4 +1,4 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;

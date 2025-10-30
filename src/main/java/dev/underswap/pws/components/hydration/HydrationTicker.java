@@ -1,6 +1,6 @@
-package com.example.pws.components.hydration;
+package dev.underswap.pws.components.hydration;
 
-import com.example.pws.PwsComponents;
+import dev.underswap.pws.PwsComponents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;

@@ -1,12 +1,14 @@
 package dev.underswap.pws;
 
 import dev.underswap.pws.blocks.DrumBlock;
-import dev.underswap.pws.blocks.ToughDirtBlock;
-import dev.underswap.pws.blocks.ToughStoneBlock;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
@@ -47,9 +49,8 @@ public class PwsBlocks {
     );
 
     public static void registerBlocks() {
-        Registry.register(Registries.BLOCK, new Identifier("pws", "drum_block"), DRUM_BLOCK);
-        Registry.register(Registries.ITEM, new Identifier("pws", "drum_block"),
-                new BlockItem(DRUM_BLOCK, new FabricItemSettings()));
+        PwsMod.LOGGER.info("Registering blocks for " + PwsMod.MOD_ID);
+    }
 
     private static Block registerBlock(String id, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(PwsMod.MOD_ID, id), block);

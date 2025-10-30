@@ -24,6 +24,7 @@ public class DrumBlock extends Block {
                 .nonOpaque());
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient && hit.getSide() == Direction.UP) {

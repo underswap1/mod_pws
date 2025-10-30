@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.example'
+group = 'dev.underswap'
 version = '0.0.1'
 
 repositories {

@@ -11,21 +11,52 @@ import net.minecraft.util.Identifier;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
 public class PwsBlocks {
-    public static final Block DRUM_BLOCK = new DrumBlock();
-    public static final Block TOUGH_STONE = new ToughStoneBlock();
-    public static final Block TOUGH_DIRT = new ToughDirtBlock();
+    public static final Item DRUM_BLOCK = registerBlockItem(
+            "drum_block",
+            new DrumBlock(
+                    FabricBlockSettings.create()
+                            .mapColor(MapColor.WHITE_GRAY)
+                            .strength(1.0F)
+                            .sounds(BlockSoundGroup.BONE)
+                            .nonOpaque()
+            ),
+            new FabricItemSettings()
+    );
+
+    public static final Item TOUGH_STONE = registerBlockItem(
+            "tough_stone",
+            new Block(
+                    FabricBlockSettings.create()
+                            .strength(2.0F, 6.0F)
+                            .requiresTool()
+                            .mapColor(MapColor.STONE_GRAY)
+                            .sounds(BlockSoundGroup.STONE)
+            ),
+            new FabricItemSettings()
+    );
+
+    public static final Item TOUGH_DIRT = registerBlockItem(
+            "though_dirt",
+            new Block(
+                    FabricBlockSettings.create()
+                            .strength(1.5F)
+                            .mapColor(MapColor.DIRT_BROWN)
+                            .sounds(BlockSoundGroup.GRAVEL)
+            ),
+            new FabricItemSettings()
+    );
 
     public static void registerBlocks() {
         Registry.register(Registries.BLOCK, new Identifier("pws", "drum_block"), DRUM_BLOCK);
         Registry.register(Registries.ITEM, new Identifier("pws", "drum_block"),
                 new BlockItem(DRUM_BLOCK, new FabricItemSettings()));
 
-        Registry.register(Registries.BLOCK, new Identifier("pws", "tough_stone"), TOUGH_STONE);
-        Registry.register(Registries.ITEM, new Identifier("pws", "tough_stone"),
-                new BlockItem(TOUGH_STONE, new FabricItemSettings()));
+    private static Block registerBlock(String id, Block block) {
+        return Registry.register(Registries.BLOCK, new Identifier(PwsMod.MOD_ID, id), block);
+    }
 
-        Registry.register(Registries.BLOCK, new Identifier("pws", "tough_dirt"), TOUGH_DIRT);
-        Registry.register(Registries.ITEM, new Identifier("pws", "tough_dirt"),
-                new BlockItem(TOUGH_DIRT, new FabricItemSettings()));
+    private static Item registerBlockItem(String id, Block block, FabricItemSettings settings) {
+        registerBlock(id, block);
+        return Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, id), new BlockItem(block, settings));
     }
 }

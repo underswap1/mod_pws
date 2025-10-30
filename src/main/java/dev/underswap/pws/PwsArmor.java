@@ -1,4 +1,4 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.ArmorItem;
@@ -16,9 +16,10 @@ public class PwsArmor {
 
     // Register armor items
     public static void registerArmor() {
-        Registry.register(Registries.ITEM, new Identifier("pws", "bone_helmet"), BONE_HELMET);
-        Registry.register(Registries.ITEM, new Identifier("pws", "bone_chestplate"), BONE_CHESTPLATE);
-        Registry.register(Registries.ITEM, new Identifier("pws", "bone_leggings"), BONE_LEGGINGS);
-        Registry.register(Registries.ITEM, new Identifier("pws", "bone_boots"), BONE_BOOTS);
+        PwsMod.LOGGER.info("Registering armor for " + PwsMod.MOD_ID);
+        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_helmet"), BONE_HELMET);
+        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_chestplate"), BONE_CHESTPLATE);
+        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_leggings"), BONE_LEGGINGS);
+        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_boots"), BONE_BOOTS);
     }
 }

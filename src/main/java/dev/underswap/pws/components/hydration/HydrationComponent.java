@@ -1,4 +1,4 @@
-package com.example.pws.components.hydration;
+package dev.underswap.pws.components.hydration;
 
 import dev.onyxstudios.cca.api.v3.component.ComponentV3;
 import net.minecraft.nbt.NbtCompound;

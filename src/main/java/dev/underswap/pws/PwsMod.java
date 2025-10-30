@@ -1,15 +1,18 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.fabricmc.api.ModInitializer;
-import com.example.pws.components.hydration.HydrationTicker;
+import dev.underswap.pws.components.hydration.HydrationTicker;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class PwsMod implements ModInitializer {
     public static final String MOD_ID = "pws";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
     public void onInitialize() {
-        System.out.println("If you read this, your a nerd!");
+        LOGGER.info("If you read this, your a nerd!");
         PwsTools.registerTools();
         PwsArmor.registerArmor();
         PwsBlocks.registerBlocks();

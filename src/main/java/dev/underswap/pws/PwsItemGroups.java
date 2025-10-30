@@ -1,4 +1,4 @@
-package com.example.pws;
+package dev.underswap.pws;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -12,7 +12,7 @@ import java.util.List;
 public class PwsItemGroups {
     public static final ItemGroup PWS_GROUP = Registry.register(
             Registries.ITEM_GROUP,
-            new Identifier("pws", "pws_group"),
+            new Identifier(PwsMod.MOD_ID, "pws_group"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemGroup.pws_group"))
                     .icon(() -> new ItemStack(PwsTools.BONE_PICKAXE))

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:coarse_dirt" },
+    { "item": "minecraft:coarse_dirt" },
+    { "item": "minecraft:gravel" },
+    { "item": "minecraft:gravel" }
+  ],
+  "result": {
+    "item": "pws:tough_dirt",
+    "count": 4
+  }
+}

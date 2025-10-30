@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " B ",
+    " S "
+  ],
+  "key": {
+    "B": { "item": "minecraft:bone" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "item": "pws:bone_sword"
+  }
+}

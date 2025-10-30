@@ -1,0 +1,69 @@
+{
+  "display": {
+    "title": "Bone Arsenal",
+    "description": "Craft a full set of bone armor and tools",
+    "icon": {
+      "item": "pws:bone_sword"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "has_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_helmet" }]
+      }
+    },
+    "has_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_chestplate" }]
+      }
+    },
+    "has_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_leggings" }]
+      }
+    },
+    "has_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_boots" }]
+      }
+    },
+    "has_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_sword" }]
+      }
+    },
+    "has_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_pickaxe" }]
+      }
+    },
+    "has_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_axe" }]
+      }
+    },
+    "has_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "item": "pws:bone_shovel" }]
+      }
+    }
+  },
+  "requirements": [
+    ["has_helmet", "has_chestplate", "has_leggings", "has_boots", "has_sword", "has_pickaxe", "has_axe", "has_shovel"]
+  ],
+  "reward": {
+    "experience": 100
+  }
+}

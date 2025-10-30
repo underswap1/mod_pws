@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:tuff" },
+    { "item": "minecraft:tuff" },
+    { "tag": "minecraft:stone_crafting_materials" },
+    { "tag": "minecraft:stone_crafting_materials" }
+  ],
+  "result": {
+    "item": "pws:tough_stone",
+    "count": 4
+  }
+}

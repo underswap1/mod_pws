@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()             // standaard Gradle plugins
+        maven { url = 'https://maven.fabricmc.net/' }   // Fabric Loom plugin
+    }
+}
+
+rootProject.name = 'pws'

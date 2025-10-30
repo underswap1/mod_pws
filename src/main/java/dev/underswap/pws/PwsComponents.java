@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 public class PwsComponents implements EntityComponentInitializer {
     public static final ComponentKey<HydrationComponent> HYDRATION =
             ComponentRegistryV3.INSTANCE.getOrCreate(
-                    new Identifier("pws", "hydration"),
+                    new Identifier(PwsMod.MOD_ID, "hydration"),
                     HydrationComponent.class
             );
 

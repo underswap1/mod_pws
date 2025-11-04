@@ -1,8 +1,6 @@
 package dev.underswap.pws;
 
 import net.fabricmc.api.ModInitializer;
-import dev.underswap.pws.components.hydration.HydrationTicker;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +14,8 @@ public class PwsMod implements ModInitializer {
         PwsTools.registerTools();
         PwsArmor.registerArmor();
         PwsBlocks.registerBlocks();
-        ServerTickEvents.END_SERVER_TICK.register(new HydrationTicker());
+        PwsItems.registerItems();
+        //noinspection ResultOfMethodCallIgnored
         PwsItemGroups.PWS_GROUP.getDisplayName();
     }
 }

@@ -7,16 +7,11 @@
   "entrypoints": {
     "main": [
       "dev.underswap.pws.PwsMod"
-    ],
-    "cardinal-components": [
-      "dev.underswap.pws.PwsComponents"
     ]
   },
   "depends": {
     "fabricloader": ">=0.16.0",
     "fabric": "*",
-    "minecraft": "1.20.1",
-    "cardinal-components-base": ">=5.2.2",
-    "cardinal-components-entity": ">=5.2.2"
+    "minecraft": "1.20.1"
   }
 }

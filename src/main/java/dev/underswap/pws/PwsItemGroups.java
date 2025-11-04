@@ -7,7 +7,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import java.util.List;
 
 public class PwsItemGroups {
     public static final ItemGroup PWS_GROUP = Registry.register(
@@ -15,20 +14,13 @@ public class PwsItemGroups {
             new Identifier(PwsMod.MOD_ID, "pws_group"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemGroup.pws_group"))
-                    .icon(() -> new ItemStack(PwsTools.BONE_PICKAXE))
-                    .entries((context, entries) -> entries.addAll(List.of(
-                            new ItemStack(PwsTools.BONE_PICKAXE),
-                            new ItemStack(PwsTools.BONE_AXE),
-                            new ItemStack(PwsTools.BONE_SHOVEL),
-                            new ItemStack(PwsTools.BONE_SWORD),
-                            new ItemStack(PwsArmor.BONE_BOOTS),
-                            new ItemStack(PwsArmor.BONE_HELMET),
-                            new ItemStack(PwsArmor.BONE_CHESTPLATE),
-                            new ItemStack(PwsArmor.BONE_LEGGINGS),
-                            new ItemStack(PwsBlocks.DRUM_BLOCK),
-                            new ItemStack(PwsBlocks.TOUGH_DIRT),
-                            new ItemStack(PwsBlocks.TOUGH_STONE)
-                    )))
+                    .icon(() -> new ItemStack(PwsTools.TOOLS.get("bone_pickaxe")))
+                    .entries((context, entries) -> {
+                        PwsTools.TOOLS.values().forEach(item -> entries.add(new ItemStack(item)));
+                        PwsArmor.ARMOR.values().forEach(item -> entries.add(new ItemStack(item)));
+                        PwsItems.ITEMS.values().forEach(item -> entries.add(new ItemStack(item)));
+                        PwsBlocks.BLOCKS.values().forEach(item -> entries.add(new ItemStack(item)));
+                    })
                     .build()
     );
 }

@@ -12,52 +12,39 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class PwsBlocks {
-    public static final Item DRUM_BLOCK = registerBlockItem(
-            "drum_block",
-            new DrumBlock(
-                    FabricBlockSettings.create()
-                            .mapColor(MapColor.WHITE_GRAY)
-                            .strength(1.0F)
-                            .sounds(BlockSoundGroup.BONE)
-                            .nonOpaque()
-            ),
-            new FabricItemSettings()
-    );
 
-    public static final Item TOUGH_STONE = registerBlockItem(
-            "tough_stone",
-            new Block(
-                    FabricBlockSettings.create()
-                            .strength(2.0F, 6.0F)
-                            .requiresTool()
-                            .mapColor(MapColor.STONE_GRAY)
-                            .sounds(BlockSoundGroup.STONE)
-            ),
-            new FabricItemSettings()
-    );
+    public static final Map<String, Block> BLOCKS = new LinkedHashMap<>();
+    public static final Map<String, Item> BLOCK_ITEMS = new LinkedHashMap<>();
 
-    public static final Item TOUGH_DIRT = registerBlockItem(
-            "though_dirt",
-            new Block(
-                    FabricBlockSettings.create()
-                            .strength(1.5F)
-                            .mapColor(MapColor.DIRT_BROWN)
-                            .sounds(BlockSoundGroup.GRAVEL)
-            ),
-            new FabricItemSettings()
-    );
+    static {
+        addBlock("drum_block", new DrumBlock(FabricBlockSettings.create()
+                .mapColor(MapColor.WHITE_GRAY)
+                .strength(1.0F)
+                .sounds(BlockSoundGroup.BONE)
+                .nonOpaque()));
+        addBlock("tough_stone", new Block(FabricBlockSettings.create()
+                .strength(2.0F, 6.0F)
+                .requiresTool()
+                .mapColor(MapColor.STONE_GRAY)
+                .sounds(BlockSoundGroup.STONE)));
+        addBlock("tough_dirt", new Block(FabricBlockSettings.create()
+                .strength(1.5F)
+                .mapColor(MapColor.DIRT_BROWN)
+                .sounds(BlockSoundGroup.GRAVEL)));
+    }
+
+    private static void addBlock(String id, Block block) {
+        BLOCKS.put(id, block);
+        BLOCK_ITEMS.put(id, new BlockItem(block, new FabricItemSettings()));
+    }
 
     public static void registerBlocks() {
         PwsMod.LOGGER.info("Registering blocks for " + PwsMod.MOD_ID);
-    }
-
-    private static Block registerBlock(String id, Block block) {
-        return Registry.register(Registries.BLOCK, new Identifier(PwsMod.MOD_ID, id), block);
-    }
-
-    private static Item registerBlockItem(String id, Block block, FabricItemSettings settings) {
-        registerBlock(id, block);
-        return Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, id), new BlockItem(block, settings));
+        BLOCKS.forEach((id, block) -> Registry.register(Registries.BLOCK, new Identifier(PwsMod.MOD_ID, id), block));
+        BLOCK_ITEMS.forEach((id, item) -> Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, id), item));
     }
 }

@@ -7,19 +7,29 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class PwsArmor {
-    // Declare armor items
-    public static final Item BONE_HELMET = new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.HELMET, new FabricItemSettings());
-    public static final Item BONE_CHESTPLATE = new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings());
-    public static final Item BONE_LEGGINGS = new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.LEGGINGS, new FabricItemSettings());
-    public static final Item BONE_BOOTS = new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.BOOTS, new FabricItemSettings());
+
+    public static final Map<String, Item> ARMOR = new LinkedHashMap<>();
+    static {
+        //Bone Armor
+        ARMOR.put("bone_helmet", new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+        ARMOR.put("bone_chestplate", new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+        ARMOR.put("bone_leggings", new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+        ARMOR.put("bone_boots", new ArmorItem(ModArmorMaterial.BONE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+        //Straw Armor
+        ARMOR.put("straw_helmet", new ArmorItem(ModArmorMaterial.STRAW, ArmorItem.Type.HELMET, new FabricItemSettings()));
+        ARMOR.put("straw_chestplate", new ArmorItem(ModArmorMaterial.STRAW, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+        ARMOR.put("straw_leggings", new ArmorItem(ModArmorMaterial.STRAW, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+        ARMOR.put("straw_boots", new ArmorItem(ModArmorMaterial.STRAW, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    }
 
     // Register armor items
     public static void registerArmor() {
         PwsMod.LOGGER.info("Registering armor for " + PwsMod.MOD_ID);
-        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_helmet"), BONE_HELMET);
-        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_chestplate"), BONE_CHESTPLATE);
-        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_leggings"), BONE_LEGGINGS);
-        Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, "bone_boots"), BONE_BOOTS);
+        ARMOR.forEach((id, item) -> Registry.register(Registries.ITEM, new Identifier(PwsMod.MOD_ID, id), item));
     }
 }

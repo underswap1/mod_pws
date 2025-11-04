@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "tag": "pws:straw_ingredients"
+  },
+  "result": "pws:straw",
+  "experiance": 0.1,
+  "cookingtime": 80
+}

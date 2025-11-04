@@ -11,8 +11,12 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
     BONE("bone", 15, new int[]{2, 5, 4, 1}, 10,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0F, 0.0F,
+            () -> Ingredient.ofItems(Items.BONE)),
+
+    STRAW("straw", 10, new int[]{1, 2, 2, 1}, 8,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F,
-            () -> Ingredient.ofItems(Items.BONE));
+            () -> Ingredient.ofItems(PwsItems.ITEMS.get("straw")));
 
     private static final int[] BASE_DURABILITY = new int[]{12, 14, 15, 10};
 

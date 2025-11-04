@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "tag": "pws:straw_ingredients"
+  },
+  "result": "pws:straw",
+  "experience": 0.1,
+  "cookingtime": 480
+}

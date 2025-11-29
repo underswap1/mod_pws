@@ -1,5 +1,6 @@
 package dev.underswap.pws;
 
+import dev.underswap.pws.world.gen.PwsConfigureFeature;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,8 @@ public class PwsMod implements ModInitializer {
         PwsArmor.registerArmor();
         PwsBlocks.registerBlocks();
         PwsItems.registerItems();
+        PwsBiomes.registerBiomes();
+        PwsConfigureFeature.registerConfiguredFeatures();
         //noinspection ResultOfMethodCallIgnored
         PwsItemGroups.PWS_GROUP.getDisplayName();
     }

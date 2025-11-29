@@ -1,5 +1,6 @@
 {
   "itemGroup.pws_group": "PWS Items",
+
   "item.pws.bone_pickaxe": "Bone Pickaxe",
   "item.pws.bone_axe": "Bone Axe",
   "item.pws.bone_shovel": "Bone Shovel",
@@ -8,11 +9,40 @@
   "item.pws.bone_chestplate": "Bone Chestplate",
   "item.pws.bone_leggings": "Bone Leggings",
   "item.pws.bone_boots": "Bone Boots",
+
   "item.pws.straw": "Straw",
   "item.pws.straw_helmet": "Straw Helmet",
   "item.pws.straw_chestplate": "Straw Chestplate",
   "item.pws.straw_leggings": "Straw Leggings",
   "item.pws.straw_boots": "Straw Boots",
+
+  "item.pws.flint_axe": "Flint axe",
+  "item.pws.flint_pickaxe": "Flint pickaxe",
+  "item.pws.flint_shovel": "Flint shovel",
+  "item.pws.flint_sword": "Flint sword",
+  "item.pws.flint_hoe": "Flint hoe",
+
+  "item.pws.obsidian_knife": "Obsidian knife",
+  "item.pws.sandstone_axe": "Sandstone axe",
+  "item.pws.sandstone_pickaxe": "Sandstone pickaxe",
+  "item.pws.sandstone_shovel": "Sandstone shovel",
+  "item.pws.sandstone_sword": "Sandstone sword",
+
+  "block.pws.redwood_log": "Redwood Log",
+  "block.pws.redwood_wood": "Redwood Wood",
+  "block.pws.stripped_redwood_log": "Stripped Redwood Log",
+  "block.pws.stripped_redwood_wood": "Stripped Redwood Wood",
+  "block.pws.redwood_planks": "Redwood Planks",
+  "block.pws.redwood_leaves": "Redwood Leaves",
+  "block.pws.redwood_sapling": "Redwood Sapling",
+  "block.pws.redwood_stairs": "Redwood Stairs",
+  "block.pws.redwood_slab": "Redwood Slab",
+  "block.pws.redwood_fence": "Redwood Fence",
+  "block.pws.redwood_fence_gate": "Redwood Fence Gate",
+  "block.pws.redwood_door": "Redwood Door",
+  "block.pws.redwood_trapdoor": "Redwood Trapdoor",
+  "block.pws.redwood_button": "Redwood Button",
+  "block.pws.redwood_pressure_plate": "Redwood Pressure Plate",
 
   "block.pws.drum_block": "Drum",
   "block.pws.tough_stone": "Tough Stone",

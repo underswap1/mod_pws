@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "half=bottom,open=false,facing=north,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_bottom" },
+    "half=top,open=false,facing=north,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_top" },
+    "half=bottom,open=true,facing=north,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_open" },
+
+    "half=bottom,open=false,facing=south,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_bottom", "y": 180 },
+    "half=top,open=false,facing=south,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_top", "y": 180 },
+    "half=bottom,open=true,facing=south,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_open", "y": 180 },
+
+    "half=bottom,open=false,facing=west,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_bottom", "y": 270 },
+    "half=top,open=false,facing=west,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_top", "y": 270 },
+    "half=bottom,open=true,facing=west,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_open", "y": 270 },
+
+    "half=bottom,open=false,facing=east,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_bottom", "y": 90 },
+    "half=top,open=false,facing=east,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_top", "y": 90 },
+    "half=bottom,open=true,facing=east,waterlogged=false": { "model": "pws:block/redwood/redwood_trapdoor_open", "y": 90 },
+
+    "half=bottom,open=false,facing=north,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_bottom" },
+    "half=top,open=false,facing=north,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_top" },
+    "half=bottom,open=true,facing=north,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_open" },
+
+    "half=bottom,open=false,facing=south,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_bottom", "y": 180 },
+    "half=top,open=false,facing=south,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_top", "y": 180 },
+    "half=bottom,open=true,facing=south,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_open", "y": 180 },
+
+    "half=bottom,open=false,facing=west,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_bottom", "y": 270 },
+    "half=top,open=false,facing=west,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_top", "y": 270 },
+    "half=bottom,open=true,facing=west,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_open", "y": 270 },
+
+    "half=bottom,open=false,facing=east,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_bottom", "y": 90 },
+    "half=top,open=false,facing=east,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_top", "y": 90 },
+    "half=bottom,open=true,facing=east,waterlogged=true": { "model": "pws:block/redwood/redwood_trapdoor_open", "y": 90 }
+  }
+}

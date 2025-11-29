@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "type=bottom,waterlogged=false": { "model": "pws:block/redwood/redwood_slab" },
+    "type=top,waterlogged=false": { "model": "pws:block/redwood/redwood_slab", "x": 180 },
+    "type=double,waterlogged=false": { "model": "pws:block/redwood/redwood_planks" },
+
+    "type=bottom,waterlogged=true": { "model": "pws:block/redwood/redwood_slab" },
+    "type=top,waterlogged=true": { "model": "pws:block/redwood/redwood_slab", "x": 180 },
+    "type=double,waterlogged=true": { "model": "pws:block/redwood/redwood_planks" }
+  }
+}

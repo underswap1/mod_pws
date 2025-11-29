@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "pws:block/redwood/redwood_wood" },
+    "axis=x": { "model": "pws:block/redwood/redwood_wood", "x": 90, "y": 90 },
+    "axis=z": { "model": "pws:block/redwood/redwood_wood", "x": 90 }
+  }
+}

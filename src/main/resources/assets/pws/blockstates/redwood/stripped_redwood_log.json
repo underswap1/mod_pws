@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y": { "model": "pws:block/redwood/stripped_redwood_log" },
+    "axis=x": { "model": "pws:block/redwood/stripped_redwood_log", "x": 90, "y": 90 },
+    "axis=z": { "model": "pws:block/redwood/stripped_redwood_log", "x": 90 }
+  }
+}

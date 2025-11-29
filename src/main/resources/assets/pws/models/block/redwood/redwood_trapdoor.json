@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor",
+  "textures": {
+    "texture": "pws:block/redwood_trapdoor"
+  }
+}

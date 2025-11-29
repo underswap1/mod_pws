@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft: item/generated",
+  "layer0": "pws:item/redwood_door"
+}
